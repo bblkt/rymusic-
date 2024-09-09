@@ -15,7 +15,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME","")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://proceed58:proceed58@cluster0.p5s9ym5.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://abood:king@cluster0.rbp1cqz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
 
@@ -23,7 +23,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 480))
 LOGGER_ID = int(getenv("LOGGER_ID"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7281002873))
+OWNER_ID = int(getenv("OWNER_ID", 7085943284))
 
 ## Fill these variables if you re deploying on heroku.
 # Your heroku app name
@@ -40,7 +40,7 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-CHANNEL_NAME = getenv("CHANNEL_NAME", "تحديثات بوت ليون)
+CHANNEL_NAME = getenv("CHANNEL_NAME", "محيط 🌊")
 CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/qv_ly")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/qv_ly")
 
@@ -79,7 +79,7 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = getenv("START_IMG_URL")
+START_IMG_URL = "https://telegra.ph/file/95f9a021664ed46050d63.jpg"
 PING_IMG_URL = "https://telegra.ph/file/95f9a021664ed46050d63.jpg"
 PLAYLIST_IMG_URL = "https://telegra.ph/file/95f9a021664ed46050d63.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/95f9a021664ed46050d63.jpg"
@@ -111,4 +111,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
